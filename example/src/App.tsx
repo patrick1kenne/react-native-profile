@@ -1,12 +1,18 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-profile';
+// example/src/App.js
 
-const result = multiply(3, 7);
+import { StyleSheet, View } from 'react-native';
+// Importation de notre composant depuis la librairie locale
+import { UserCard } from 'react-native-profile';
 
 export default function App() {
+  const user = {
+    name: 'John Doe',
+    imageUrl: 'https://randomuser.me/api/portraits/men/1.jpg',
+  };
+
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <UserCard name={user.name} imageUrl={user.imageUrl} />
     </View>
   );
 }
@@ -14,7 +20,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
   },
 });
