@@ -1,6 +1,6 @@
 {
   "name": "react-native-profile",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Ma librairie React Native pour l'affichage du profile d'un user",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
